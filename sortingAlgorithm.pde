@@ -20,6 +20,9 @@ void tri_bulle(float[]tableau){
         }
 }
 
+
+//La fonction draw est une fonction interne à Processing 
+//C'est une boucle infinie qui draw sans pause. 
 void draw() {
   background(0);
   if(indice < tableau.length){
@@ -27,7 +30,7 @@ void draw() {
   indice++; 
    
   }
-   
+   //On dessine les lignes 
   for (int i = 0; i < tableau.length; i++) {
     stroke(0,255,0);
     line(i, height, i, height - tableau[i]);
