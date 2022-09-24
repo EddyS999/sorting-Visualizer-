@@ -1,13 +1,12 @@
 float []tableau;
 int indice; 
+
+
 void setup() {
   size(400, 200);
   tableau = new float[width]; //
   for (int i = 0; i < tableau.length; i++)
     tableau[i] = random(height);
-   
-  
-
 }
 
 void tri_bulle(float[]tableau){
@@ -28,9 +27,7 @@ void draw() {
   indice++; 
    
   }
-  
    
-  
   for (int i = 0; i < tableau.length; i++) {
     stroke(0,255,0);
     line(i, height, i, height - tableau[i]);
@@ -40,8 +37,6 @@ void draw() {
     println("Lignes triées: "+indice);
     noLoop();
   }
-  
-  
  
 }
     
